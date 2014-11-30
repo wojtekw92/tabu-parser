@@ -14,9 +14,12 @@ jsdom.env(
     var forbids;
     var cards = win.document.querySelectorAll('td[align=center][valign=top]');
     cards = Array.prototype.slice.call(cards);
-    cards.forEach(function(card){
-      console.log('-----------------------')
-      console.log('Word: ', card.querySelectorAll('.card_top_name')[0].innerHTML);
+    cards.forEach(function(card) {
+      console.log('-----------------------');
+      console.log(
+        'Word: ',
+        card.querySelectorAll('.card_top_name')[0].innerHTML
+      );
       console.log('Dont use:');
       forbids = card.querySelectorAll('.card_tabu_div');
       forbids = Array.prototype.slice.call(forbids);
