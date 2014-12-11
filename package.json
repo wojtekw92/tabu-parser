@@ -1,7 +1,7 @@
 {
   "name": "tabu-parser",
   "version": "0.0.1",
-  "author": "",
+  "author": "Michał Budzyński <michal@virtualdesign.pl>",
   "repository": "git@github.com:wojtekw92/tabu-parser.git",
   "devDependencies": {
     "assert": "^1.1.2",
@@ -11,5 +11,8 @@
   "scripts": {
     "test": "node tests/tabu-parser-tests.js",
     "lint": "node node_modules/jshint/bin/jshint ."
+  },
+  "dependencies": {
+    "jsdom": "^1.4.1"
   }
 }
